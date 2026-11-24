@@ -1,0 +1,210 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://share/see_through/see_through_boxes.gd" id="1_ie6p4"]
+[ext_resource type="Shader" path="res://share/see_through/see_through.gdshader" id="2_gngyk"]
+
+[sub_resource type="Environment" id="Environment_1rwry"]
+background_mode = 1
+background_color = Color(0.62, 0.8, 0.95, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.9, 0.93, 1, 1)
+ambient_light_energy = 0.3
+tonemap_mode = 2
+tonemap_exposure = 0.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_weg4o"]
+albedo_color = Color(0.35, 0.36, 0.38, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f8j81"]
+material = SubResource("StandardMaterial3D_weg4o")
+size = Vector3(40, 0.2, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yi6ra"]
+albedo_color = Color(0.9, 0.25, 0.2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vm3bt"]
+material = SubResource("StandardMaterial3D_yi6ra")
+size = Vector3(2.6, 1.2, 1.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_apf21"]
+albedo_color = Color(0.2, 0.45, 0.9, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0nyh4"]
+material = SubResource("StandardMaterial3D_apf21")
+size = Vector3(2.6, 1.2, 1.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vx110"]
+albedo_color = Color(0.2, 0.75, 0.35, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ktw4j"]
+material = SubResource("StandardMaterial3D_vx110")
+size = Vector3(2.6, 1.2, 1.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ihahc"]
+albedo_color = Color(0.95, 0.75, 0.15, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t3lwo"]
+material = SubResource("StandardMaterial3D_ihahc")
+size = Vector3(2.6, 1.2, 1.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxloq"]
+albedo_color = Color(0.6, 0.3, 0.8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5g1ts"]
+material = SubResource("StandardMaterial3D_wxloq")
+size = Vector3(2.6, 1.2, 1.2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6kkig"]
+render_priority = 0
+shader = ExtResource("2_gngyk")
+shader_parameter/albedo = null
+shader_parameter/roughness = null
+shader_parameter/see_through_alpha = null
+shader_parameter/below_height = null
+shader_parameter/box_count = null
+shader_parameter/box_lo = null
+shader_parameter/box_hi = null
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cqlv8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4ynqh"]
+material = SubResource("StandardMaterial3D_cqlv8")
+size = Vector3(0.5, 6, 0.5)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bqpb2"]
+render_priority = 0
+shader = ExtResource("2_gngyk")
+shader_parameter/albedo = null
+shader_parameter/roughness = null
+shader_parameter/see_through_alpha = null
+shader_parameter/below_height = null
+shader_parameter/box_count = null
+shader_parameter/box_lo = null
+shader_parameter/box_hi = null
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5pys"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bmljo"]
+material = SubResource("StandardMaterial3D_f5pys")
+size = Vector3(0.5, 6, 0.5)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_otuuq"]
+render_priority = 0
+shader = ExtResource("2_gngyk")
+shader_parameter/albedo = null
+shader_parameter/roughness = null
+shader_parameter/see_through_alpha = null
+shader_parameter/below_height = null
+shader_parameter/box_count = null
+shader_parameter/box_lo = null
+shader_parameter/box_hi = null
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ufh6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6bbqk"]
+material = SubResource("StandardMaterial3D_2ufh6")
+size = Vector3(0.5, 6, 0.5)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l81tb"]
+render_priority = 0
+shader = ExtResource("2_gngyk")
+shader_parameter/albedo = null
+shader_parameter/roughness = null
+shader_parameter/see_through_alpha = null
+shader_parameter/below_height = null
+shader_parameter/box_count = null
+shader_parameter/box_lo = null
+shader_parameter/box_hi = null
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxjhw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8hofo"]
+material = SubResource("StandardMaterial3D_wxjhw")
+size = Vector3(0.5, 6, 0.5)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gpwvv"]
+render_priority = 0
+shader = ExtResource("2_gngyk")
+shader_parameter/albedo = null
+shader_parameter/roughness = null
+shader_parameter/see_through_alpha = null
+shader_parameter/below_height = null
+shader_parameter/box_count = null
+shader_parameter/box_lo = null
+shader_parameter/box_hi = null
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oyrra"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dfba6"]
+material = SubResource("StandardMaterial3D_oyrra")
+size = Vector3(0.5, 6, 0.5)
+
+[node name="SeeThroughExample" type="Node3D" unique_id=1166391523]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1702443717]
+environment = SubResource("Environment_1rwry")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1376419811]
+transform = Transform3D(0.81915206, 0.43938506, -0.36868784, 0, 0.64278764, 0.76604444, 0.57357645, -0.62750685, 0.5265408, 0, 0, 0)
+light_energy = 0.8
+shadow_enabled = true
+
+[node name="Ground" type="MeshInstance3D" parent="." unique_id=1810811879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+mesh = SubResource("BoxMesh_f8j81")
+
+[node name="SeeThroughBoxes" type="Node" parent="." unique_id=862348692 node_paths=PackedStringArray("occluders", "targets")]
+script = ExtResource("1_ie6p4")
+occluders = [NodePath("../Pillar0"), NodePath("../Pillar1"), NodePath("../Pillar2"), NodePath("../Pillar3"), NodePath("../Pillar4")]
+targets = [NodePath("../Box0"), NodePath("../Box1"), NodePath("../Box2"), NodePath("../Box3"), NodePath("../Box4")]
+
+[node name="Box0" type="MeshInstance3D" parent="." unique_id=1244071019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.6, -1.5)
+mesh = SubResource("BoxMesh_vm3bt")
+
+[node name="Box1" type="MeshInstance3D" parent="." unique_id=1230506359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.6, -1.5)
+mesh = SubResource("BoxMesh_0nyh4")
+
+[node name="Box2" type="MeshInstance3D" parent="." unique_id=539424363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -1.5)
+mesh = SubResource("BoxMesh_ktw4j")
+
+[node name="Box3" type="MeshInstance3D" parent="." unique_id=1384322557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.6, -1.5)
+mesh = SubResource("BoxMesh_t3lwo")
+
+[node name="Box4" type="MeshInstance3D" parent="." unique_id=1317134331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.6, -1.5)
+mesh = SubResource("BoxMesh_5g1ts")
+
+[node name="Pillar0" type="MeshInstance3D" parent="." unique_id=1105393918]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2, 3, 2)
+material_override = SubResource("ShaderMaterial_6kkig")
+mesh = SubResource("BoxMesh_4ynqh")
+
+[node name="Pillar1" type="MeshInstance3D" parent="." unique_id=768610479]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 3, 2)
+material_override = SubResource("ShaderMaterial_bqpb2")
+mesh = SubResource("BoxMesh_bmljo")
+
+[node name="Pillar2" type="MeshInstance3D" parent="." unique_id=1746959464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, 2)
+material_override = SubResource("ShaderMaterial_otuuq")
+mesh = SubResource("BoxMesh_6bbqk")
+
+[node name="Pillar3" type="MeshInstance3D" parent="." unique_id=433155921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1, 3, 2)
+material_override = SubResource("ShaderMaterial_l81tb")
+mesh = SubResource("BoxMesh_8hofo")
+
+[node name="Pillar4" type="MeshInstance3D" parent="." unique_id=2010588513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2, 3, 2)
+material_override = SubResource("ShaderMaterial_gpwvv")
+mesh = SubResource("BoxMesh_dfba6")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=170835603]
+transform = Transform3D(0.9928768, -0.040102012, 0.11219365, 0, 0.94165456, 0.33658093, -0.11914523, -0.3341834, 0.934947, 1.5, 5.5, 11)
+current = true
+fov = 45.0
+far = 500.0

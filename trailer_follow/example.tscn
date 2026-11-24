@@ -1,0 +1,104 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://share/trailer_follow/example_drive.gd" id="1_nvuyl"]
+[ext_resource type="Script" path="res://share/trailer_follow/trailer_chain.gd" id="2_gs0u0"]
+[ext_resource type="Script" path="res://share/trailer_follow/example_trails.gd" id="3_mbpbs"]
+
+[sub_resource type="Environment" id="Environment_8hs3q"]
+background_mode = 1
+background_color = Color(0.62, 0.8, 0.95, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.9, 0.93, 1, 1)
+ambient_light_energy = 0.3
+tonemap_mode = 2
+tonemap_exposure = 0.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ocke2"]
+albedo_color = Color(0.3, 0.36, 0.28, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_shdh0"]
+material = SubResource("StandardMaterial3D_ocke2")
+size = Vector3(60, 0.2, 60)
+
+[sub_resource type="Curve3D" id="Curve3D_731o0"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 8, 0, -7, 0, 0, 0, 0, 0, 0, 8.780361, 0, -6.923141, 0, 0, 0, 0, 0, 0, 9.530734, 0, -6.695518, 0, 0, 0, 0, 0, 0, 10.2222805, 0, -6.3258786, 0, 0, 0, 0, 0, 0, 10.828427, 0, -5.8284273, 0, 0, 0, 0, 0, 0, 11.325878, 0, -5.222281, 0, 0, 0, 0, 0, 0, 11.6955185, 0, -4.5307336, 0, 0, 0, 0, 0, 0, 11.9231415, 0, -3.7803612, 0, 0, 0, 0, 0, 0, 12, 0, -3, 0, 0, 0, 0, 0, 0, 12, 0, 3, 0, 0, 0, 0, 0, 0, 11.9231415, 0, 3.7803612, 0, 0, 0, 0, 0, 0, 11.6955185, 0, 4.5307336, 0, 0, 0, 0, 0, 0, 11.325878, 0, 5.222281, 0, 0, 0, 0, 0, 0, 10.828427, 0, 5.8284273, 0, 0, 0, 0, 0, 0, 10.2222805, 0, 6.3258786, 0, 0, 0, 0, 0, 0, 9.530734, 0, 6.695518, 0, 0, 0, 0, 0, 0, 8.780361, 0, 6.923141, 0, 0, 0, 0, 0, 0, 8, 0, 7, 0, 0, 0, 0, 0, 0, -8, 0, 7, 0, 0, 0, 0, 0, 0, -8.780361, 0, 6.923141, 0, 0, 0, 0, 0, 0, -9.530734, 0, 6.695518, 0, 0, 0, 0, 0, 0, -10.2222805, 0, 6.3258786, 0, 0, 0, 0, 0, 0, -10.828427, 0, 5.8284273, 0, 0, 0, 0, 0, 0, -11.325878, 0, 5.222281, 0, 0, 0, 0, 0, 0, -11.6955185, 0, 4.5307336, 0, 0, 0, 0, 0, 0, -11.9231415, 0, 3.7803612, 0, 0, 0, 0, 0, 0, -12, 0, 3, 0, 0, 0, 0, 0, 0, -12, 0, -3, 0, 0, 0, 0, 0, 0, -11.9231415, 0, -3.7803612, 0, 0, 0, 0, 0, 0, -11.6955185, 0, -4.5307336, 0, 0, 0, 0, 0, 0, -11.325878, 0, -5.222281, 0, 0, 0, 0, 0, 0, -10.828427, 0, -5.8284273, 0, 0, 0, 0, 0, 0, -10.2222805, 0, -6.3258786, 0, 0, 0, 0, 0, 0, -9.530734, 0, -6.695518, 0, 0, 0, 0, 0, 0, -8.780361, 0, -6.923141, 0, 0, 0, 0, 0, 0, -8, 0, -7, 0, 0, 0, 0, 0, 0, 8, 0, -7),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 37
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q4m4b"]
+albedo_color = Color(0.9, 0.25, 0.2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hl38u"]
+material = SubResource("StandardMaterial3D_q4m4b")
+size = Vector3(1.6, 1.4, 1.8)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_va67p"]
+albedo_color = Color(0.2, 0.45, 0.9, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jr0ke"]
+material = SubResource("StandardMaterial3D_va67p")
+size = Vector3(1.5, 1.3, 4.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mcl26"]
+albedo_color = Color(0.2, 0.75, 0.35, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5gu5c"]
+material = SubResource("StandardMaterial3D_mcl26")
+size = Vector3(1.5, 1.3, 4.2)
+
+[node name="TrailerExample" type="Node3D" unique_id=1414056116]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=861393741]
+environment = SubResource("Environment_8hs3q")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1694121543]
+transform = Transform3D(0.81915206, 0.43938506, -0.36868784, 0, 0.64278764, 0.76604444, 0.57357645, -0.62750685, 0.5265408, 0, 0, 0)
+light_energy = 0.8
+shadow_enabled = true
+
+[node name="Ground" type="MeshInstance3D" parent="." unique_id=2038988264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+mesh = SubResource("BoxMesh_shdh0")
+
+[node name="Track" type="Path3D" parent="." unique_id=1556305188]
+curve = SubResource("Curve3D_731o0")
+
+[node name="Drive" type="PathFollow3D" parent="Track" unique_id=1829020612]
+script = ExtResource("1_nvuyl")
+
+[node name="Tractor" type="Node3D" parent="Track/Drive" unique_id=1192447848]
+
+[node name="Cab" type="MeshInstance3D" parent="Track/Drive/Tractor" unique_id=494213218]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, -0.6)
+mesh = SubResource("BoxMesh_hl38u")
+
+[node name="Trailer1" type="Node3D" parent="." unique_id=136244018]
+
+[node name="Body" type="MeshInstance3D" parent="Trailer1" unique_id=39049391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1.9)
+mesh = SubResource("BoxMesh_jr0ke")
+
+[node name="Trailer2" type="Node3D" parent="." unique_id=366435099]
+
+[node name="Body" type="MeshInstance3D" parent="Trailer2" unique_id=1866785464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1.9)
+mesh = SubResource("BoxMesh_5gu5c")
+
+[node name="TrailerChain" type="Node" parent="." unique_id=1259348332 node_paths=PackedStringArray("tractor", "trailers")]
+script = ExtResource("2_gs0u0")
+tractor = NodePath("../Track/Drive/Tractor")
+trailers = [NodePath("../Trailer1"), NodePath("../Trailer2")]
+axle_length = 3.2
+hitch_back = 4.0
+
+[node name="Trails" type="MeshInstance3D" parent="." unique_id=1015356456 node_paths=PackedStringArray("chain")]
+script = ExtResource("3_mbpbs")
+chain = NodePath("../TrailerChain")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1767728618]
+transform = Transform3D(1, 0, 0, 0, 0.5144958, 0.8574929, 0, -0.8574929, 0.5144958, 0, 30, 18)
+current = true
+fov = 50.0
+far = 500.0
